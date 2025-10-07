@@ -864,21 +864,6 @@ textarea:focus {
       
       
 
-#typewriter {
-    font-family: 'poppins';
-    font-size: 30px;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 2px solid;
-    animation: blink 0.7s step-end infinite;
-
-}
-
-@keyframes blink {
-    from, to { border-color: transparent }
-    50% { border-color: black }
-
-}
 #typing {
     font-family: 'poppins';
     font-size: 30px;

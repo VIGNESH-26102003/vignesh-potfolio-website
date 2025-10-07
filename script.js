@@ -48,46 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-document.addEventListener("DOMContentLoaded", function() {
-    const text = "Web Developer";
-    const target = document.getElementById("typewriter");
-    let index = 0;
-    let typing = false;
-
-    if (!target) return;
-
-
-    target.textContent ="";
-
-    function typewriter() {
-        if(typing){
-               if (index < text.length) {
-            target.textContent += text.charAt(index);
-            index++;
-            setTimeout(typewriter, 100);
-        } else{
-            setTimeout(() =>{
-                typing = false;
-                setTimeout(typewriter, 100);
-            }, 2000);
-        }
-       
-
-    } else{
-        if (index > 0) {
-            target.textContent = text.substring(0, index - 1);
-            index--;
-            setTimeout(typewriter, 50);
-        } else {
-            typing = true;
-            setTimeout(typewriter, 500);
-        }
-    }
-     }
-     typewriter();
-    });
-
     document.addEventListener("DOMContentLoaded", function(){
 
         const text = "Vignesh";
